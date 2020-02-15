@@ -6,7 +6,7 @@ from google.cloud .vision import types
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'ServiceAccountToken.json'
 
 FileName = "Img.jpg"
-FolderPath = r"C:\Users\gursi\Documents\seeWat\VisionAPISeeWat"
+FolderPath = os.getcwd()
 FullPath = os.path.join(FolderPath,FileName)
 
 def GetText(FilePath):
