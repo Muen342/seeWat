@@ -1,5 +1,5 @@
 import os, io
-from tkinter import filedialog, Tk
+#from tkinter import filedialog, Tk
 from google.cloud import vision
 from google.cloud .vision import types
 

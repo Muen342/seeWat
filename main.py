@@ -2,13 +2,13 @@ import sys
 from gtts import gTTS
 import playsound
 import os, io
-from tkinter import filedialog, Tk
+#from tkinter import filedialog, Tk
 from google.cloud import vision
 from google.cloud .vision import types
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'ServiceAccountToken.json'
 
-FileName = "testimg1.jpg"
+FileName = "whiteboard.jpg"
 FolderPath = os.getcwd()
 FullPath = os.path.join(FolderPath,FileName)
 
