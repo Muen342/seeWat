@@ -5,7 +5,7 @@ from google.cloud .vision import types
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'ServiceAccountToken.json'
 
-FileName = "Img.jpg"
+FileName = "testimg.jpg"
 FolderPath = os.getcwd()
 FullPath = os.path.join(FolderPath,FileName)
 
