@@ -4,6 +4,7 @@ import playsound
 
 def main():
   print(sys.version)
+  txt2speech("demofile.txt")
   
 def txt2speech(filename):
   file = open(filename, "r")
@@ -14,6 +15,6 @@ def txt2speech(filename):
 if __name__== "__main__":
   main()
 
-txt2speech("demofile.txt")
+
 
 
