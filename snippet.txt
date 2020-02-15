@@ -1,6 +1,5 @@
-from soundplayer import SoundPlayer
+import os
+os.system('mpg321 foo.mp3 &')
 
-# Use device with ID 1  (mostly USB audio adapter)
-p = SoundPlayer("/home/pi/sound/salza1.wav", 1)        
-print "play for 10 s with volume 0.5"
-p.play(0.5) # non-blocking, volume = 0.5
+//install first:
+sudo apt-get install mpg321
