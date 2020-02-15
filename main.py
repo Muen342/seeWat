@@ -8,7 +8,7 @@ from google.cloud .vision import types
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'ServiceAccountToken.json'
 
-FileName = "testimg.jpg"
+FileName = "testimg1.jpg"
 FolderPath = os.getcwd()
 FullPath = os.path.join(FolderPath,FileName)
 
@@ -35,7 +35,7 @@ def txt2speech(filename):
 def main():
   print(sys.version)
   
-  f = open("demofile.txt", "a")
+  f = open("demofile.txt", "w")
   f.write(GetText(FullPath))
   f.close()
   
