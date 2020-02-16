@@ -42,6 +42,8 @@ def txt2speech(filename):
 def camScan():
   print(sys.version)
   os.system("raspistill -o READPIC.jpg")
+  os.system("ffplay -nodisp -autoexit shutter_sound.mp3")
+  os.system("ffplay -nodisp -autoexit processing.mp3")
   f = open("demofile.txt", "w")
   f.write(GetText(FullPath))
   f.close()
